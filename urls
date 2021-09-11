@@ -1,8 +1,12 @@
 Currency Exchange Service
-http://localhost/8001/currency-exchange/from/USD/to/INR
+http://localhost/8000/currency-exchange/from/USD/to/INR
 
 Currency Conversion Service
 http://localhost/8100/currency-conversion/from/USD/to/INR/quantity/10
+http://localhost/8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+naming server
+http://localhost:8761
 
 
 Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE CURRENCY_EXCHANGE (ID BIGINT NOT NULL, CONVERSION_MULTIPLE DECIMAL(19,2), ENVIRONMENT VARCHAR(255), FROM[*] VARCHAR(255), TO VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
